@@ -1,0 +1,245 @@
+body{
+    background-color: #ffff;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* style za navigation menu hapa */
+.nav{
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    
+}
+#logo{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+#login{
+    color: black;
+}
+#menu{
+    color: white;
+    display: none;
+}
+/* mwisho wastyle za navigation menu */
+
+/* Hero section hapa */
+.hero{
+    height: 300px;
+    background-image: url("images/frt.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+
+}
+
+/* mwisho hero section hapa */
+
+/* style cards zako hapa */
+.products{
+    margin: 20px;
+    display: flex;
+}
+
+.card{
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0px 2px 3px 0px rgb(0,0,0,0.4);
+    border-radius: 3px;
+}
+
+.details{
+    text-align: center;
+}
+.add{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.add button{
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    outline: none;
+    border: none;
+    width: 90%;
+}
+
+/* mwisho wa cards hapa */
+
+/* mwanzo wa load more  */
+.load{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.load button{
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    outline: none;
+    border: none;
+    width: 10%;
+    cursor: pointer;
+    cursor: pointer;
+
+
+}
+/* Mwisho wa load more button hapa */
+
+/* mwanzo wa footer hapa */
+    footer{
+        background-color: rgb(20, 18, 18);
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+/* mwisho wa footer hapa */
+
+/* sngle product hapa */
+.single{
+    display: flex;
+    margin-left: 40px ;
+    margin-right: 40px ;
+    box-shadow: 0px 2px 3px 0px rgb(0,0,0,0.4);
+    border-radius: 3px;
+    padding: 20px;
+}
+.image, .desc{
+    flex: 50%;
+}
+.desc{
+    padding: 0px 20px;
+}
+
+.btns{
+    display: flex;
+}
+.btns button{
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    outline: none;
+    border: none;
+    width: 25%;
+    cursor: pointer;
+}
+#checkout{
+    background-color: red;
+}
+/* mwisho single product */
+
+
+/* table ya cart hapa */
+table{
+    width: 100%;
+    text-align: center;
+}
+
+th, td{
+    padding: 16px;
+    border-bottom: solid 1px teal;
+}
+/* mwisho table ya cart */
+
+/* media query hapa */
+@media screen and (max-width: 480px) and  (min-width: 100px){
+    
+/* style za navigation menu hapa */
+.nav{
+    flex-direction: column;
+}
+ul{
+    display: none;
+}
+li{
+    float: none;
+}
+
+/* mwisho wastyle za navigation menu */
+
+/* Hero section hapa */
+.hero{
+    height: 300px;
+    background-image: url("images/frt.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* mwisho hero section hapa */
+
+/* style cards zako hapa */
+.products{
+    flex-direction: column;
+}
+
+.card{
+    width: 100%;
+    flex: 100%;
+    margin: 10px 0px;
+    box-shadow: 0px 2px 3px 0px rgb(0,0,0,0.4);
+    border-radius: 3px;
+}
+
+/* mwanzo wa load more  */
+.load{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.load button{
+    width: 90%;
+}
+/* Mwisho wa load more button hapa */
+
+/* sngle product hapa */
+.single{
+    flex-direction: column;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    padding: 10px;
+}
+
+.btns{
+    flex-direction: column;
+}
+
+.btns button{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#checkout{
+    background-color: red;
+}
+/* mwisho single product */
+
+
+/* table ya cart hapa */
+#cols{
+    display: none;
+}
+/* mwisho table ya cart */
+
+}
