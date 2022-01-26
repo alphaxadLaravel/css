@@ -13,6 +13,7 @@ body{
     width: 100%;
     top: 0;
 }
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -26,8 +27,8 @@ li a{
     text-decoration: none;
     padding: 10px 20px;
     display: block;
-    
 }
+
 #logo{
     color: white;
     text-decoration: none;
@@ -54,6 +55,12 @@ li a{
 
 /* mwisho hero section hapa */
 
+.links a{
+   color: white;
+   padding: 5px;
+   text-decoration: none;
+}
+
 /* style cards zako hapa */
 .products{
     margin: 20px;
@@ -74,13 +81,13 @@ li a{
     text-align: center;
     padding-bottom: 20px;
 }
-.add button{
-    padding: 10px 20px;
+.add a{
     background-color: teal;
     color: white;
     outline: none;
     border: none;
-    width: 90%;
+    text-decoration: none;
+    padding: 10px 20%;
 }
 
 /* mwisho wa cards hapa */
@@ -158,19 +165,51 @@ th, td{
     border-bottom: solid 1px teal;
 }
 /* mwisho table ya cart */
+a.menu{
+    display: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+
+/* 
+
+    Section inayofuata ni ya media Query
+    Nimefanya Upande wa simu peke yake
+    Unaweza fanya hata ka tablet pia
+
+    Style za juu huko n kwaajili ya desktop view
+    zingne zinatumika na upande wa simu pia
+
+
+*/
+
+
+
 
 /* media query hapa */
 @media screen and (max-width: 480px) and  (min-width: 100px){
     
 /* style za navigation menu hapa */
 .nav{
-    flex-direction: column;
+    /* flex-direction: column; */
+    overflow: hidden;
 }
+
 ul{
     display: none;
 }
 li{
     float: none;
+}
+a.menu{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
 }
 
 /* mwisho wastyle za navigation menu */
